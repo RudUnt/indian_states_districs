@@ -1124,18 +1124,19 @@ const statesAndDistrictsAndUnionTerritories = {
   ],
 };
 
-const subDivisions = {[
-  {
-    district: 'Vidisha',
-    subDivisions: [
-      {
-        id:135101,
-        name: ""
-      }
-    ]
-  }
-]
-}
+// const subDivisions = {[
+//   {
+//     district: 'Vidisha',
+//     subDivisions: [
+//       {
+//         id:135101,
+//         name: ""
+//       }
+//     ]
+//   }
+// ]
+// }
+
 // Endpoint to fetch all states and their districts
 app.get("/api/states", (req, res) => {
   const states = statesAndDistrictsAndUnionTerritories.states.map((i) => {
