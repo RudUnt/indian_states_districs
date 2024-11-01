@@ -7,7 +7,7 @@ import cors from "cors";
 // Allow requests from http://localhost:3000
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000",'https://beautyone.vercel.app']
   })
 );
 
@@ -1123,6 +1123,19 @@ const statesAndDistrictsAndUnionTerritories = {
     },
   ],
 };
+
+const subDivisions = {[
+  {
+    district: 'Vidisha',
+    subDivisions: [
+      {
+        id:135101,
+        name: ""
+      }
+    ]
+  }
+]
+}
 // Endpoint to fetch all states and their districts
 app.get("/api/states", (req, res) => {
   const states = statesAndDistrictsAndUnionTerritories.states.map((i) => {
