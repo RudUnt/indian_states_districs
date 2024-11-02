@@ -7,11 +7,11 @@ import cors from "cors";
 // Allow requests from http://localhost:3000
 app.use(
   cors({
-    origin: ["http://localhost:3000",'https://beautyone.vercel.app', 'https://beautyone-rudunts-projects.vercel.app/', 'https://www.beautyone.co.in']
+    origin: ["http://localhost:3000",'https://beautyone.vercel.app', 'https://beautyone-rudunts-projects.vercel.app', 'https://www.beautyone.co.in']
   })
 );
 
-const statesAndDistrictsAndUnionTerritories = {
+const statesAndDistrictsAndUnionTerritories = { 
   states: [
     {
       id: 1,
